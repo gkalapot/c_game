@@ -63,16 +63,6 @@ void initializeShips(struct ship *ships) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 // fundamental function that randomizes the placement of the ships
 void initializeBoard(int dimension, 
 	int battle_ship_spots[dimension+1][dimension+1], struct ship *ships) {
@@ -140,11 +130,6 @@ void initializeBoard(int dimension,
         }
     }
 }
-
-
-
-
-
 
 // function that randomly places the bomb on the board
 void placeBomb(int * x_position_of_bomb, int * y_position_of_bomb, 
@@ -219,6 +204,7 @@ void drawBoard(int dimension, char letter_of_recognition[dimension+1][dimension+
         printf("\n");
     }
 }
+
 // function that gets player's coordinates and checks that they are valid
 void getPlayerCoordinates(int * row, int * column, int dimension, 
 	char letter_of_recognition[dimension+1][dimension+1]) {
